@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'LinksVercel',
 ]
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel,app']  # Permitir todos os hosts
+ALLOWED_HOSTS = ['*']  # Permitir todos os hosts
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
