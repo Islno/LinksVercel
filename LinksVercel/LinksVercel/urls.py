@@ -1,6 +1,8 @@
+# FILE: LinksVercel/urls.py
+
 from django.contrib import admin
 from django.urls import path
-from templates import views
+from . import views  # Importar views do mesmo diretório
 
 urlpatterns = [
     path('admin/', admin.site.urls),
