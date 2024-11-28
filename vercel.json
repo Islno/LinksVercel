@@ -2,15 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "LinksVercel/wsgi.py",
+      "src": "LinksVercel/LinksVercel/wsgi.py",
       "use": "@vercel/python",
-      "config": { "runtime": "python3.9" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "LinksVercel/wsgi.py"
+      "dest": "LinksVercel/LinksVercel/wsgi.py"
     }
   ]
 }
+
